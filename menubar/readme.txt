@@ -1,9 +1,10 @@
 === Menubar ===
-Contributors: dontdream
-Tags: menu, menubar, navigation, suckerfish, superfish
-Requires at least: 5.8
-Tested up to: 6.5
-Stable tag: 5.9.3
+Contributors:       dontdream
+Tags:               menu, menubar, navigation, suckerfish, superfish
+License:            GPLv2 or later
+Requires at least:  6.1
+Tested up to:       6.7
+Stable tag:         5.9.3
 
 Single and multi-level menus for your WordPress site, styled with customizable menu templates.
 
