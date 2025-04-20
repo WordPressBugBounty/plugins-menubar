@@ -65,7 +65,23 @@ function ($)
 </script>
 
 <?php 
-	$item_list = wpm_item_list ($menuid, array(), 0); 
+	$item_list = wpm_item_list ($menuid, array(), 0);
+	$wpm_type_list = array (
+		'Home' 			=> 'Home'			. __(': the main page of your blog', 'menubar'),
+		'FrontPage' 	=> 'FrontPage'		. __(': the front page of your site', 'menubar'),
+		'Heading' 		=> 'Heading'		. __(': a non clickable item', 'menubar'), 
+		'Tag' 			=> 'Tag'			. __(': a tag archive', 'menubar'), 
+		'TagList' 		=> 'TagList'		. __(': the tag archive list', 'menubar'), 
+		'Category' 		=> 'Category'		. __(': a category archive', 'menubar'), 
+		'CategoryTree' 	=> 'CategoryTree'	. __(': a category archive, with subcategories', 'menubar'), 
+		'Page' 			=> 'Page'			. __(': a static page', 'menubar'),
+		'PageTree' 		=> 'PageTree'		. __(': a static page, with subpages', 'menubar'),
+		'Post' 			=> 'Post'			. __(': a single post', 'menubar'),
+		'SearchBox' 	=> 'SearchBox'		. __(': a search box', 'menubar'),
+		'External' 		=> 'External'		. __(': any static URL', 'menubar'),
+		'PHP'	 		=> 'PHP'			. __(': any PHP generated label and URL', 'menubar'),
+		'Custom' 		=> 'Custom'			. __(': your custom HTML', 'menubar'),
+	);
 
 if ($action == 'edit') {
 	$heading = __('Edit Menu Item', 'menubar');

@@ -1,22 +1,5 @@
 <?php
 
-$wpm_type_list = array (
-'Home' 			=> 'Home'			. __(': the main page of your blog', 'menubar'),
-'FrontPage' 	=> 'FrontPage'		. __(': the front page of your site', 'menubar'),
-'Heading' 		=> 'Heading'		. __(': a non clickable item', 'menubar'), 
-'Tag' 			=> 'Tag'			. __(': a tag archive', 'menubar'), 
-'TagList' 		=> 'TagList'		. __(': the tag archive list', 'menubar'), 
-'Category' 		=> 'Category'		. __(': a category archive', 'menubar'), 
-'CategoryTree' 	=> 'CategoryTree'	. __(': a category archive, with subcategories', 'menubar'), 
-'Page' 			=> 'Page'			. __(': a static page', 'menubar'),
-'PageTree' 		=> 'PageTree'		. __(': a static page, with subpages', 'menubar'),
-'Post' 			=> 'Post'			. __(': a single post', 'menubar'),
-'SearchBox' 	=> 'SearchBox'		. __(': a search box', 'menubar'),
-'External' 		=> 'External'		. __(': any static URL', 'menubar'),
-'PHP'	 		=> 'PHP'			. __(': any PHP generated label and URL', 'menubar'),
-'Custom' 		=> 'Custom'			. __(': your custom HTML', 'menubar'),
-);
-
 $wpm_type_fields = array (
 'Home' 			=> array ('cssclass', 'attributes'),
 'FrontPage' 	=> array ('cssclass', 'attributes'),
@@ -32,19 +15,6 @@ $wpm_type_fields = array (
 'External' 		=> array ('url', 'cssclass', 'attributes'),
 'PHP'	 		=> array ('phpcode', 'cssclass', 'attributes'),
 'Custom' 		=> array ('html', 'cssclass', 'attributes'),
-);
-
-$wpm_field_name = array (
-'name' 			=> __('Name', 'menubar'), 
-'imageurl' 		=> __('Image', 'menubar'), 
-'type' 			=> __('Type', 'menubar'), 
-'selection' 	=> __('Selection', 'menubar'), 
-'cssclass' 		=> __('CSS class', 'menubar'), 
-'attributes'	=> __('Attributes', 'menubar'), 
-'depth' 		=> __('Depth', 'menubar'), 
-'exclude' 		=> __('Exclude', 'menubar'), 
-'headings' 		=> __('Headings', 'menubar'), 
-'sortby' 		=> __('Sort by', 'menubar'), 
 );
 
 $wpm_field_type = array (
@@ -245,7 +215,20 @@ function wpm_display_selection ($item)
 
 function wpm_display_fields ($item)
 {
-	global $wpm_type_fields, $wpm_field_name, $wpm_field_type;
+	global $wpm_type_fields, $wpm_field_type;
+
+	$wpm_field_name = array (
+		'name' 			=> __('Name', 'menubar'), 
+		'imageurl' 		=> __('Image', 'menubar'), 
+		'type' 			=> __('Type', 'menubar'), 
+		'selection' 	=> __('Selection', 'menubar'), 
+		'cssclass' 		=> __('CSS class', 'menubar'), 
+		'attributes'	=> __('Attributes', 'menubar'), 
+		'depth' 		=> __('Depth', 'menubar'), 
+		'exclude' 		=> __('Exclude', 'menubar'), 
+		'headings' 		=> __('Headings', 'menubar'), 
+		'sortby' 		=> __('Sort by', 'menubar'), 
+	);
 
 	$out = '';
 	foreach ($wpm_type_fields[$item->type] as $field)

@@ -3,7 +3,7 @@
 Plugin Name: Menubar
 Plugin URI: https://dontdream.it/menubar/
 Description: Configurable menus with your choice of menu templates.
-Version: 5.9.3
+Version: 5.9.4
 Author: Andrea Tarantini
 Author URI: https://dontdream.it/
 Text Domain: menubar
@@ -31,7 +31,7 @@ $wpm_options->option_name  	= 'menubar';
 $wpm_options->update_option	= true;
 $wpm_options->function_name	= 'wpm_display_';
 $wpm_options->menu_type   	= 'Menu';
-$wpm_options->wpm_version 	= '5.9.3';
+$wpm_options->wpm_version 	= '5.9.4';
 
 include_once ('wpm-db.php');
 include_once ('wpm-menu.php');

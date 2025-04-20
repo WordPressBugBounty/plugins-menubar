@@ -3,8 +3,8 @@ Contributors:       dontdream
 Tags:               menu, menubar, navigation, suckerfish, superfish
 License:            GPLv2 or later
 Requires at least:  6.1
-Tested up to:       6.7
-Stable tag:         5.9.3
+Tested up to:       6.8
+Stable tag:         5.9.4
 
 Single and multi-level menus for your WordPress site, styled with customizable menu templates.
 
@@ -34,6 +34,8 @@ Standard installation, see [Installing Plugins](https://wordpress.org/support/ar
 
 == Changelog ==
 
+= 5.9.4 =
+* Fixed a few notices related to *load_plugin_textdomain*
 = 5.9.3 =
 * Expanded the documentation section
 = 5.9.2 =
